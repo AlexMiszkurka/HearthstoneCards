@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hearthstone Cards  |  Comparison Tool</title>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+<body>
+	<h1>Hearthstone Cards Comparison Tool</h1>
+	<br>
+	<script>
+		function populateTable() {
+			$.ajax({
+				url: 'card_data/AllSets.json',
+				dataType: 'json',
+				success: function( data ) {
+					console.log("it worked");
+				},
+				error: function() {
+					console.log("it worked");
+				}
+			});
+		}
+		
+	$( document ).ready( function() {
+		populateTable();
+	});
+	
+</script>
+	
+	
+	<br>
+	<hr>
+	<br>
+	<img src="images/icon.jpg" width="90" height="90" alt="Hearthstone!!!"><br>
+	<h3>Useful Links</h3>
+		<ul> 
+			<li><a href= "http://hearthstonetopdeck.com">Hearthstone Top Deck</a>
+			<li><a href= "http://us.battle.net/hearthstone/en/">Blizzard's Official Site</a>
+		</ul>
+</body>
+</html>
