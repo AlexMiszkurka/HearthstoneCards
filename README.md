@@ -1,4 +1,4 @@
 HearthstoneCards
 ================
 
-A Hearthstone Card Database and Comparator
+A website to view and compare all Hearthstone cards
